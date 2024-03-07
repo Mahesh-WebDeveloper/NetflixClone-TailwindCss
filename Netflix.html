@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Netflix Demo</title>
+   <script src="https://cdn.tailwindcss.com"></script>   
+   
+   </head>
+<body>
+   <div class="container-fluid bg-[url('images/banner.jpg')] bg-cover bg-center bg-no-repeat relative border-[#161414]  border-b-[12px]">
+      <div class="overlay absolute w-full h-screen top-0 left-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+      
+      <div class="container mx-auto h-screen">
+         
+         <div class=" mx-auto relative z-[999] h-auto grid-cols-2" style="max-width: 1028px;">
+            <div class="grid grid-cols-2 items-center">
+               
+               <div class="col">
+                  <div class="logo-outer">
+                     <img src="images/580b57fcd9996e24bc43c529.png" alt="" width="200px" height="40px">
+                  </div>
+               </div>
+               
+               <div class="col text-[white] lg:mr-0 mr-[30px] justify-end gap-5 flex">
+                  <div class="select">
+                     <select name="language" id="language" class="text-white pl-[1.5px] pr-[30px] py-[4px] bg-[#141010] border-[1px] border-[gray] rounded hidden md:block ">
+                        <option value="English">🌐English</option>
+                        <option value="Hindi">Hindi</option>
+                     </select>
+                  </div>
+                  <button class="bg-[red] rounded-md py-1 px-3 text-[bold]">Sign in</button>
+               </div>
+            </div>
+         </div>
+         
+         <div class="max-w-[1000px] mx-auto  bg-[transparent] relative z-[8] text-center lg:mt-[167px] mt-[100px]">
+            <h1 class="lg:text-[48px] text-[2rem] text-white font-bold pl-[10px] leading-tighter tracking-normal lg:px-[0px] px-[12px]">Unlimited movies, TV shows and more</h1>
+            <p class="text-white lg:text-[1.5rem] text-[1.125rem] font-normal py-[15px]">Watch anywhere. Cancel anytime.</p>
+            <h3 class="text-white lg:text-[1.5rem] text-[1.125rem]  font-normal">Ready to watch? Enter your email to create or restart your membership.</h3>
+            
+       
+
+           <div class="input-outer flex justify-center mx-auto gap-3 mt-[50px] md:justify-center md:mr-[40px] mr-0 pb-[0px] lg:mr-[192px]">
+            <div class="input d-inline lg:w-[370px] md:w-[290px] h-[56px] text-center lg:ml-[200px] md:ml-[10px]">
+                <input type="text" placeholder=" Email address" class="w-[100%] h-[100%] bg-[#00000096] border-[0.1px] border-[gray] ps-2 text-[20px]">
+            </div>
+            <div class="input-sidebox text-center  h-[56px]">
+                <button class="d-inline h-[56px] py-[12px] px-[24px] bg-[red] lg:text-[1.5rem] text-[1rem] text-white font-bold rounded-lg">Get Started ></button>
+            </div>
+        </div>
+
+      
+           
+           
+            
+         </div>
+         
+      </div>
+      
+      <div class="nocontent py-20  bg-[#000000e8]">
+         
+      </div>
+   </div>
+   
+   <div class="container-fluid w-full bg-black py-20 border-[#161414]  border-b-[12px]">
+      <div class="max-w-[1028px] mx-auto">
+         <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-8 items-center">
+            <div class="text-left md:text-center md:mx-auto">
+               <h2 class=" lg:text-start text-center text-white  lg:text-[3rem] text-[2rem] font-extrabold">Enjoy on your TV</h2>
+               <p class=" lg:text-start text-center text-white lg:text-[1.5rem] text-[1.25rem] font-medium">
+                  Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+               </p>
+            </div>
+            <div class="w-full relative flex justify-center lg:justify-normal ">
+               <img src="images/tv.png" class="lg:w-[500px] w-[400px]" alt="" width="500px">
+               <div class="overlay absolute lg:left-[68px] lg:h-[206px] lg:w-[357px] lg:top-[79px]  bg-red left-[102px] h-[167px] w-[284px] top-[66px] ">
+                  <video id="videoPlayer" width="100%" height="100%" autoplay muted loop>
+                     <source src="images/video-tv-in-0819.m4v" type="video/mp4">
+                  </video>
+               </div>
+            </div> 
+         </div>
+      </div>
+      
+   </div>
+   
+   
+   <div class="container-fluid w-full bg-black py-[0px] border-[#161414]  border-b-[12px]">
+      <div class="max-w-[1028px] mx-auto">
+         <div class="grid  lg:grid-cols-2 grid-cols-1 gap-8 items-center">
+            
+            <div class="w-full relative flex items-center justify-center h-screen lg:order-1 order-2">
+               <img src="images/mobile-0819.jpg" alt="">
+               <div class="postiond w-[52%] mx-auto absolute top-[382px] left-[118px] w-1/2 bg-[#000000e6] py-[0.5rem] px-[0.75rem] border-[2px] border-[rgba(128,128,128,0.7)] rounded-[0.75rem] shadow-[0 0 2em 0 rgb(0,0,0)]">
+                  <div class="grid grid-cols-2 flex items-center lg:mt-[0px]  ">
+                     <div class="w-[58px]">
+                        <img src="images/boxshot.png" class="" alt="" width="57px">
+                     </div>
+                     <div class="text-white text-start ml-[-39px] leading-snug">
+                        <h4 class="font-bold">Stranger Things</h4>
+                        <p class="text-[#0071eb]">Downloading...</p>
+                     </div>
+                  </div>
+                
+               </div>
+           </div>
+           
+            
+            <div class="text-start leading-snug lg:order-2 order-1">
+               <h2 class="lg:text-start text-center text-white lg:text-[3rem] text-[2rem]  font-extrabold lg:pt-0 pt-[11px] lg:px-[0px] px-[10px]">Download your shows to watch offline</h2>
+               <p class=" lg:text-start lg:px-[0px] px-[10px] text-white font-medium leading-loose text-center text-white lg:text-[1.5rem] text-[1.25rem] ">
+                  Save your favourites easily and always have something to watch.
+               </p>
+            </div>
+         </div> 
+         
+      </div>
+   </div>
+
+
+   <div class="container-fluid w-full bg-black py-20 border-[#161414]  border-b-[12px]">
+      <div class="max-w-[1028px] mx-auto">
+         <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
+            <div class="text-start">
+               <h2 class=" lg:text-start text-center text-white lg:text-[3rem] text-[2rem]  font-extrabold">Watch everywhere</h2>
+               <p class="lg:text-start text-center text-white text-[1.5rem] font-medium text-center text-white lg:text-[1.5rem] text-[1.25rem] lg:px-[0px] px-[10px]">
+                  Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+               </p>
+            </div>
+            <div class="w-full relative">
+               <img class="relative z-[99]" src="images/device-pile-in.png" alt=""  width="500px">
+               <div class="overlay absolute z-[9] left-[96px]  h-[171px] w-[300px] top-[42px] bg-red"> 
+                  <video id="videoPlayer" width="100%" height="100%" autoplay muted loop>
+                     <source src="images/video-devices-in.m4v" type="video/mp4">
+                  </video>
+               </div>
+            </div>  
+         </div>
+      </div>
+   </div>
+
+   
+   <div class="container-fluid w-full bg-black py-[0px] border-[#161414]  border-b-[12px]">
+      <div class="max-w-[1028px] mx-auto">
+         <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
+            
+            <div class="w-full relative flex items-center justify-center h-screen lg:order-1 order-2">
+               <img src="images/chilidren.png" alt="">
+           </div>
+           
+            
+            <div class="text-start leading-snug lg:order-1 order-1 ">
+               <h2 class="text-white text-[2.8rem] font-extrabold lg:text-start text-center lg:text-[3rem] text-[2rem] ">Create profiles for kids</h2>
+               <p class="text-white text-[1.5rem] font-medium lg:text-start text-center lg:text-[1.5rem] text-[1.25rem]  ">
+                  Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+               </p>
+            </div>
+         </div> 
+         
+      </div>
+   </div>
+
+
+   <div class="container-fluid w-full bg-black py-[0px] border-[#161414]  border-b-[12px] py-[20px]">
+      <div class="max-w-[1028px] mx-auto  bg-[black mb-[10px] pb-[20px]">
+         <h2 class="text-center  font-bold py-[10px] mb-[16px] lg:text-start text-center text-white lg:text-[3rem] text-[2rem]">Frequently Asked Questions</h2>
+         
+         <div class="faq-h3 items-center my-[5px]">
+            <h3 class=" cursor-pointer text-white font-bold items-center p-[1.3rem] bg-[#2D2D2D] flex justify-between text-[22px] lg:w-[100%] w-[80%] lg:mx-0 mx-auto">What is Netflix? <span class="text-end text-[33px]">+</span></h3>
+            <div class="bg-[#2D2D2D] leading-loose contenfaq mt-[1.5px] text-[1.5rem] text-[white] p-[24px] hidden lg:w-[100%] w-[80%] lg:mx-0 mx-auto">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+               You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+         </div>
+
+         <div class="faq-h3 items-center my-[5px]">
+            <h3 class=" cursor-pointer text-white font-bold items-center p-[1.3rem] bg-[#2D2D2D] flex justify-between text-[22px] lg:w-[100%] w-[80%] lg:mx-0 mx-auto">Where can I watch?<span class="text-end text-[33px]">+</span></h3>
+            <div class="bg-[#2D2D2D] leading-loose contenfaq mt-[1.5px] text-[1.5rem] text-[white] p-[24px] hidden lg:w-[100%] w-[80%] lg:mx-0 mx-auto">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+               You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+         </div>
+
+         <div class="faq-h3 items-center my-[5px]">
+            <h3 class=" cursor-pointer text-white font-bold items-center p-[1.3rem] bg-[#2D2D2D] flex justify-between text-[22px] lg:w-[100%] w-[80%] lg:mx-0 mx-auto">How do I cancel? <span class="text-end text-[33px]">+</span></h3>
+            <div class="bg-[#2D2D2D] leading-loose contenfaq mt-[1.5px] text-[1.5rem] text-[white] p-[24px] hidden lg:w-[100%] w-[80%] lg:mx-0 mx-auto">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+               You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+         </div>
+         <div class="faq-h3 items-center my-[5px]">
+            <h3 class=" cursor-pointer text-white font-bold items-center p-[1.3rem] bg-[#2D2D2D] flex justify-between text-[22px] lg:w-[100%] w-[80%] lg:mx-0 mx-auto">Netflix for kids? <span class="text-end text-[33px]">+</span></h3>
+            <div class="bg-[#2D2D2D] leading-loose contenfaq mt-[1.5px] text-[1.5rem] text-[white] p-[24px] hidden lg:w-[100%] w-[80%] lg:mx-0 mx-auto">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+               You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+         </div>
+
+
+       
+         <h5 class="text-white text-[22px] py-[20px] text-center">Ready to watch? Enter your email to create or restart your membership.</h5>
+            
+         <div class="input-outer flex justify-center mx-auto gap-3 mt-[50px] md:justify-center md:mr-[40px] mr-0 pb-[0px] lg:mr-[192px]">
+            <div class="input d-inline lg:w-[370px] md:w-[290px] h-[56px] text-center lg:ml-[200px] md:ml-[10px]">
+                <input type="text" placeholder=" Email address" class="w-[100%] h-[100%] bg-[#00000096] border-[0.1px] border-[gray] ps-2 text-[20px]">
+            </div>
+            <div class="input-sidebox text-center  h-[56px]">
+                <button class="d-inline h-[56px] py-[12px] px-[24px] bg-[red] lg:text-[1.5rem] text-[1rem] text-white font-bold rounded-lg">Get Started ></button>
+            </div>
+        </div>
+     
+      </div>
+   </div>
+  
+
+
+   <div class="container-fluid w-full bg-black py-[0px] border-[#161414]  border-b-[12px] py-[80px]">
+      <div class="max-w-[1028px] mx-auto">
+      <div class="headin text-white text-opacity-70  lg:text-left text-center"><h4>Questions? Call 000-800-919-1694</h4></div>
+
+      <div class="grid lg:grid-cols-3 grid-cols-1  text-white text-opacity-70 leading-loose py-[20px] ">
+         <div class="underline underline-offset-2 ]">
+            <ul class="leading-loose lg:m-0 mb-[40px] lg:text-left text-center lg:m-0 mx-auto">
+               <li>FAQ</li>
+               <li>Media Centre</li>
+               <li>Ways to Watch</li>
+               <li>Cookie Preferences</li>
+               <li>Speed Test</li>
+               <select name="language" id="language" class="text-white pl-[1.5px] pr-[30px] py-[4px] bg-[#141010] border-[1px] border-[gray] rounded my-[10px]">
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+               </select>
+               <li>Netflix India</li>
+
+            </ul>
+         </div>
+         <div class="underline underline-offset-2 ]">
+               <ul class="leading-loose lg:m-0 mb-[40px] lg:text-left text-center">
+               <li>FAQ</li>
+               <li>Help Centre</li>
+               <li>Account</li>
+               <li>Media Centre</li>
+               <li>Investor Relations</li>
+            </ul>
+         </div>
+         <div class="underline underline-offset-2 ]">
+               <ul class="leading-loose lg:m-0 mb-[40px] lg:text-left text-center">
+               <li>FAQ</li>
+               <li>Help Centre</li>
+               <li>Account</li>
+               <li>Media Centre</li>
+               <li>Investor Relations</li>
+            </ul>
+         </div>
+      </div>
+         
+      </div>
+   </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+   let videoPlayer = document.querySelector('#videoPlayer');
+   videoPlayer.addEventListener('ended', () => {
+      videoPlayer.play(); 
+   });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      $('.faq-h3 h3').click(function() {
+      $(this).next().slideToggle(500);
+      $(this).parent().siblings().find('.contenfaq').slideUp();
+    });
+
+});
+  
+    
+</script>
+</html>
+
